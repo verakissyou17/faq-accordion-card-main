@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub?share=true)
+- Live Site URL: [Add live site URL here](https://verakissyou17.github.io/faq-accordion-card-main/)
 
 ## My process
 
