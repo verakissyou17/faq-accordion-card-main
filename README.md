@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub?share=true)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/faqaccordioncardmain-ka64_2x-1o)
 - Live Site URL: [Add live site URL here](https://verakissyou17.github.io/faq-accordion-card-main/)
 
 ## My process
