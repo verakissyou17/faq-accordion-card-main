@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+  --primary-text-color: hsl(238, 29%, 16%);
+  --secondary-text-color: hsl(14, 88%, 65%);
+  --primary-gradient: linear-gradient(180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%));
+  --neutral-text-color: hsl(237, 12%, 33%);
+  --neutral-divider-color: hsl(240, 5%, 91%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-family: "Kumbh Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  background: var(--primary-gradient);
+} 
+
+main {
+  background-color: var(--white);
+  background-image: url('./images/bg-pattern-desktop.svg'), url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left -580px top -300px, left -80px center;
+  background-size: auto;
+  width: 100%;
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  border-radius: 25px;
+  padding: 2.5em;
+  position: relative;
+}
+
+img, svg {
+  max-width: 100%;
+  display: block
+}
+
+.small-picture--cube {
+  z-index: 1;
+  position: absolute;
+  left: -10%;
+  top: 42%;
+}
+
+.small-woman--picture {
+  display: none;
+}
+
+.section--two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.title {
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+.question {
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.question:hover {
+  color: var(--secondary-text-color);
+}
+
+.accordion--answer {
+  display: none;
+}
+
+.answer {
+  font-family: var(--font-family);
+  color: var(--neutral-text-color);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.75rem;
+  margin-top: .5em;
+  opacity: .6;
+}
+
+.accordion {
+  border-bottom: 1px solid var(--neutral-divider-color);
+  padding-block: 1em;
+}
+
+/* CSS Rules for make the answer visible at hover */
+/* .accordion:hover .accordion--answer {
+  display: inline-block;
+}
+
+.accordion:hover .js-arrow--down {
+    transform: rotate(180deg);
+  } */
+
+.accordion--question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (width < 850px) {
+  main {
+    background-image: url('./images/bg-pattern-mobile.svg');
+    background-position: top center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    max-width: 330px;
+    padding: 1em;
+  }
+
+  .small-picture--cube {
+   display: none;
+  }
+
+  .small-woman--picture {
+    display: block;
+    width: 240px;
+    position: absolute;
+    left: 14%;
+    top: -20%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .section--two {
+    padding: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  .question {
+    font-size: smaller;
+  }
+
+  .visible {
+    font-size: small;
+  }
+}
